@@ -907,8 +907,6 @@ const Results = (props: { address?: string } ): JSX.Element => {
             <span className="toggle-filters" onClick={() => setShowFilters(true)}>Show Filters</span>
             <a href="#view-download-raw-data"><span className="toggle-filters">Export Data</span></a>
             <a href="/about"><span className="toggle-filters">Learn about the Results</span></a>
-            <a href="/about#additional-resources"><span className="toggle-filters">More tools</span></a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/web-check"><span className="toggle-filters">View GitHub</span></a>
           </div>
       ) }
       </FilterButtons>
