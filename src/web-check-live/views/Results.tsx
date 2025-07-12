@@ -937,8 +937,6 @@ const Results = (props: { address?: string } ): JSX.Element => {
           </Masonry>
       </ResultsContent>
       <ViewRaw everything={resultCardData} />
-      <AdditionalResources url={address} />
-      <Footer />
       <Modal isOpen={modalOpen} closeModal={()=> setModalOpen(false)}>{modalContent}</Modal>
       <ToastContainer limit={3} draggablePercent={60} autoClose={2500} theme="dark" position="bottom-right" />
     </ResultsOuter>

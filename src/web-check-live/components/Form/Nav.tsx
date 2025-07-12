@@ -20,9 +20,8 @@ const Header = styled(StyledCard)`
 const Nav = (props: { children?: ReactNode}) => {
   return (
     <Header as="header">
-    <Heading color={colors.primary} size="large">
-      <img width="64" src="/web-check.png" alt="Web Check Icon" />
-      <a href="/" target="_self">Web Check</a>
+    <Heading color={colors.primary}>
+      <a href="/" target="_self">PEEK@WeCanTest</a>
     </Heading>
       {props.children && props.children}
   </Header>

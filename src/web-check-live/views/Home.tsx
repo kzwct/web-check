@@ -218,9 +218,8 @@ const Home = (): JSX.Element => {
       <FancyBackground />
       <UserInputMain onSubmit={formSubmitEvent}>
         <a href="/">
-          <Heading as="h1" size="xLarge" align="center" color={colors.primary}>
-            <img width="64" src="/web-check.png" alt="Web Check Icon" />
-            Web Check
+          <Heading as="h1" align="left" color={colors.primary}>
+            PEEK@WeCanTest
           </Heading>
         </a>
         <Input
@@ -239,61 +238,6 @@ const Home = (): JSX.Element => {
         { errorMsg && <ErrorMessage>{errorMsg}</ErrorMessage>}
         <Button type="submit" styles="width: calc(100% - 1rem);" size="large" onClick={submit}>Analyze!</Button>
       </UserInputMain>
-      <SponsorCard>
-        <Heading as="h2" size="small" color={colors.primary}>Sponsored by</Heading>
-        <div className="inner">
-          <p>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://terminaltrove.com/?utm_campaign=github&utm_medium=referral&utm_content=web-check&utm_source=wcgh"
-            >
-              Terminal Trove
-            </a> - The $HOME of all things in the terminal.
-            <br />
-            <span className="cta">
-              Get updates on the latest CLI/TUI tools via
-              the <a
-                target="_blank"
-                rel="noreferrer"
-                className="cta"
-                href="https://terminaltrove.com/newsletter?utm_campaign=github&utm_medium=referral&utm_content=web-check&utm_source=wcgh"
-                >
-                Terminal Trove newsletter
-              </a>
-            </span>
-            
-          </p>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://terminaltrove.com/?utm_campaign=github&utm_medium=referral&utm_content=web-check&utm_source=wcgh">
-            <img width="120" alt="Terminal Trove" src="https://i.ibb.co/NKtYjJ1/terminal-trove-web-check.png" />
-          </a>
-        </div>
-
-      </SponsorCard>
-      <SiteFeaturesWrapper>
-        <div className="features">
-          <Heading as="h2" size="small" color={colors.primary}>Supported Checks</Heading>
-          <ul>
-            {docs.map((doc, index) => (<li key={index}>{doc.title}</li>))}
-            <li><Link to="/check/about">+ more!</Link></li>
-          </ul>
-        </div>
-        <div className="links">
-          <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/web-check" title="Check out the source code and documentation on GitHub, and get support or contribute">
-            <Button>View on GitHub</Button>
-          </a>
-          <a target="_blank" rel="noreferrer" href="https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/web-check" title="Deploy your own private or public instance of Web-Check to Netlify">
-            <Button>Deploy your own</Button>
-          </a>
-          <Link to="/check/about#api-documentation" title="View the API documentation, to use Web-Check programmatically">
-            <Button>API Docs</Button>
-          </Link>
-        </div>
-      </SiteFeaturesWrapper>
-      <Footer isFixed={true} />
     </HomeContainer>
   );
 }
